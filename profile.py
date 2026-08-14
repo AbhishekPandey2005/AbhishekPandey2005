@@ -89,7 +89,7 @@ PORTRAIT = r"""::::::::::..:+===:...::-------=--=--=-:==-=----:..:.:+*==-:::::--
 
 
 def graphql(query: str, variables: dict) -> dict:
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_STATS_TOKEN")
+    token = os.environ.get("GH_STATS_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if not token:
         raise RuntimeError("Set GITHUB_TOKEN or GH_STATS_TOKEN before running profile.py")
     body = json.dumps({"query": query, "variables": variables}).encode()
