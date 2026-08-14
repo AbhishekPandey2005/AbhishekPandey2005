@@ -210,7 +210,7 @@ def svg(theme: dict[str, str], stats: dict[str, int | str]) -> str:
         ("Email", "abhi992005@gmail.com"),
         ("LinkedIn", "abhishek-pandey-6169aa293"),
         ("X", "@Abhishekthepiro"),
-        ("Portfolio", "coming soon"),
+        ("Portfolio", "https://abhishekpandeyy.netlify.app/"),
     ]
     contacts = []
     for i, (key, value) in enumerate(contact):
