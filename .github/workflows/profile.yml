@@ -25,6 +25,7 @@ jobs:
       - name: Generate profile SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
           BIRTH_DATE: ${{ secrets.BIRTH_DATE }}
         run: python profile.py
       - name: Commit updated statistics
